@@ -14,8 +14,10 @@ let fetchImages = async () => {
 let fadeIn = () => {
 	const idx = Math.floor(Math.random() * images.length)
 	image.src = images[idx].url;
-	image.className = "in"
-	setTimeout(fadeOut, timeout);
+	setTimeout(() => {
+		image.className = "in"
+		setTimeout(fadeOut, timeout);
+	}, 1000)
 }
 
 let fadeOut = () => {
