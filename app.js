@@ -2,7 +2,7 @@ let images;
 let image = document.getElementById("image");
 
 let fetchImages = async () => {
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxgJQVEsxMe4Erb4UVdrNNLUlU6QBz9Q5iG5fuaZEbAH_YJ3lTyVRX-s6N7AjJ_fV-2RA/exec'; // Replace with your /exec URL
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzaAupbvxvxC5RLT6772_gsyFa0tfF3wFUPS1b8DbAqA7HsYjxesDGQlMa4jpIw0_1UMw/exec'; // Replace with your /exec URL
 	const images = await (await fetch(SCRIPT_URL)).json();
 	console.log(images)
 	return images;
