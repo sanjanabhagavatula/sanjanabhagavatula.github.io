@@ -17,7 +17,7 @@ let fadeIn = () => {
 	setTimeout(() => {
 		image.className = "in"
 		setTimeout(fadeOut, timeout);
-	}, 1000)
+	}, 2500)
 }
 
 let fadeOut = () => {
